@@ -23,6 +23,8 @@ export const N2 = () => {
         <p className='dislikes'>Dislikes: <span>{dislikeCount}</span></p>
         <p className='total'>Total Likes: <span>{total}</span></p>
       </div>
+      <hr></hr>
     </div>
+   
   );
 };

@@ -57,6 +57,7 @@ export const N3 = () => {
         Change Background Color
       </button>
       <h1>The color is: {backgroundColor}</h1>
+      <hr></hr>
     </div>
   );
 };

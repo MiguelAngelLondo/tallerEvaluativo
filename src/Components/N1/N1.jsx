@@ -34,8 +34,12 @@ export const Number1 = () => {
   }, [backgroundColor, buttonColor, textColor]);
 
   return (
+    <>
     <button onClick={toggleDarkMode} className="light-toggle">
       💡
     </button>
+    <hr></hr>
+    </>
+    
   );
 };

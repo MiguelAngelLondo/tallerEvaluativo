@@ -1,42 +1,5 @@
-body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  justify-content: center;
-  align-items: center;
-}
-
-main {
-  display: flex;
-  margin-top: 50px;
-  height: 100vh;
-  gap: 20px;
-  flex-direction: column;
-}
-
-.card {
-  text-align: center;
-}
-
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: transparent;
-  border: 2px solid #333;
-  cursor: pointer;
-  border-radius: 5px;
-  margin: 5px;
-  transition: color 0.3s ease, background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #333;
-  color: white;
-}
-
 .light-toggle {
-  position: fixed;
+  position: fixed; /* Fija el botón en la esquina superior derecha */
   top: 20px;
   right: 20px;
   padding: 10px 20px;
@@ -55,21 +18,35 @@ button:hover {
 
 .Like-Dislike {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-top: 20px;
 }
-.likes{
+
+.likes {
+  font-size: 20px;
+}
+p{
   font-size: 20px;
 }
 
-.Like-Dislike button {
-  background-color: #8f8f8f;
-  color: white;
-  font-size: 18px;
+button {
+  padding: 12px 25px;
+  margin: 10px;
+  font-size: 18px; 
+  background-color: #4180c9;
+  color: white; 
+  border: none; 
+  border-radius: 8px; 
+  cursor: pointer; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  transition: background-color 0.3s ease, transform 0.2s ease; 
 }
 
-.Like-Dislike button:hover {
-  background-color: #585555;
+button:hover {
+  background-color: #819cb9; /* Azul más oscuro al pasar el cursor */
+  transform: scale(1.05); /* Efecto de agrandamiento */
 }
 
+button:active {
+  background-color: #003f7f; /* Azul aún más oscuro al hacer clic */
+  transform: scale(0.95); /* Efecto de reducción al hacer clic */
+}
